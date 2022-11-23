@@ -1,0 +1,37 @@
+$main-color: red;
+$secondary-color:green;
+$alternative-color:blue;
+
+
+
+
+
+
+div{
+    
+    margin-top: 50px;
+    border: 1px solid $main-color;
+  
+    section{
+      display: flex;
+      padding: 0 20px 20px 20px;
+   }
+    h1{
+        color: $secondary-color;
+        text-decoration: underline;
+        text-decoration-color:$alternative-color ;
+        text-align: center;
+    }
+    article{
+        border: 1px solid $secondary-color;
+        padding: 10px 10px 10px 15px;
+        
+    }
+    .blue{
+        color: $alternative-color;
+    }
+    .red{
+        color: $main-color;
+    }
+}
+    
