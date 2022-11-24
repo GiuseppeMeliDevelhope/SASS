@@ -1,0 +1,54 @@
+
+
+
+@mixin container ($div-color){
+   
+   border: 1px solid $div-color;
+    
+}
+
+@mixin article ($font-size:1rem,$color,$border-color){
+    font-size: $font-size;
+    color: $color;
+    border: 1px solid $border-color;
+    
+}
+
+
+
+.container{
+    @include container (red);
+    h1{
+        color:green;
+        text-decoration: underline;
+        text-decoration-color: blue;
+        text-align: center;
+    }
+}
+article{
+    padding: 10px 10px 10px 15px;
+    
+}
+
+
+.blue{
+@include article(1rem,blue,green)
+}
+
+.red{
+    @include article(1rem,red,green)
+}
+
+.footer{
+    @include article(24px,green,blue)
+}
+
+.sec1{
+    display: flex;
+    padding: 0 20px 20px 20px;
+    gap: 1rem;
+}
+
+.sec2{
+    margin: 0 10px 10px 10px;
+}
